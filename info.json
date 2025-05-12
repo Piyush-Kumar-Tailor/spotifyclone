@@ -1,0 +1,117 @@
+{
+    "songs":[
+        {
+            "folder_name":"Background songs",
+            "song_name": [
+                "Perfect Strangers Things - Ezra Lipp.mp3",
+                "Racing Trains - Casa Rosa's Tulum Vibes.mp3",
+                "Ricky Tar - Casa Rosa's Tulum Vibes.mpx3",
+                "Sleep Music No. 1 - Chris Haugen.mp3",
+                "Starlight on the Water - Chris Haugen.mp3",
+                "Suave Sleuth - Casa Rosa's Tulum Vibes.mp3"
+            ]
+        },
+
+        {
+            "folder_name":"Bass Booster songs",
+            "song_name":[
+                "Khayaal - Talwiinder (pagalall.com).mp3",
+                "Tu - Talwiinder 320 Kbps.mp3",
+                "Off Vilen 320 Kbps.mp3",
+                "Mitti De Tibbe Kaka 320 Kbps.mp3"
+
+            ]
+        },
+
+        {
+            "folder_name":"Classical songs",
+            "song_name":[
+                "Backbite - Dhanda Nyoliwala (pagalall.com).mp3",
+                "Tu Ru Ruu Harrdy Sandhu 320 Kbps.mp3",
+                "Tu Hai Kahan - (Raag.Fm).mp3",
+                "Ve Haaniyaan - Avvy Sra 320 Kbps.mp3",
+                "FAASLE(KoshalWorld.Com).mp3",
+                "Jhanjran - Gurnam Bhullar.mp3",
+                "Suicide Sukh E Muzical Doctorz 320 Kbps.mp3",
+                "Jhanjhar - Raj Mawer (pagalall.com).mp3"
+            ]
+        },
+
+        {
+            "folder_name":"Haryanavi songs",
+            "song_name":[
+                "Baba Ji Vishu Puthi 320 Kbps.mp3",
+                "Khayaal - Talwiinder (pagalall.com).mp3",
+                "Jat Clan Dhanda Nyoliwala 320 Kbps.mp3"
+            ]
+        },
+
+        {
+            "folder_name":"Heart Touching songs",
+            "song_name":[
+                "Baba Ji Vishu Puthi 320 Kbps.mp3",
+                "Khayaal - Talwiinder (pagalall.com).mp3",
+                "Mere_Warga_1.mp3",
+                "Family Di Member - Amrinder Gill.mp3"
+            ]
+        },
+
+        {
+            "folder_name":"Party Mood songs",
+            "song_name":[
+                "Trending Nakhra - Amrit Maan.mp3",
+                "Powerhouse Amrit Maan 320 Kbps.mp3",
+                "DHOKHA - PaagalWorld.Com.Se.mp3",
+                "Jat Clan Dhanda Nyoliwala 320 Kbps.mp3",
+                "Hornn Blow Harrdy Sandhu 320 Kbps.mp3",
+                "Hulara - J Star.mp3",
+                "Faltu F.a.l.t.u 320 Kbps.mp3",
+                "Bapu Zimidar.mp3",
+                "Isq Risk - (Raag.Fm).mp3",
+                "Laal Pari - Housefull 5 320 Kbps.mp3",
+                "Akhiyan_Ch.mp3"
+            ]
+        },
+
+        {
+            "folder_name":"Punjabi songs",
+            "song_name":[
+                "Putt_Jatt_Da_1.mp3",
+                "Struggler - R Nait.mp3",
+                "Char Din.mp3",
+                "Born To Shine - Diljit Dosanjh.mp3",
+                "Jhanjhar - Raj Mawer (pagalall.com).mp3",
+                "Mere_Warga_1.mp3"
+            ]
+        },
+
+        {
+            "folder_name":"Relaxing Deep Sleep songs",
+            "song_name":[
+                "Dekhte Dekhte Batti Gul Meter Chalu 320 Kbps.mp3",
+                "Jaqeen Talwiinder 320 Kbps.mp3",
+                "Tere Bina Na Guzara E - Josh Brar 320 Kbps.mp3"
+            ]
+        },
+
+        {
+            "folder_name":"relaxing songs",
+            "song_name":[
+                "Tera Mera Safar - 320Kbps-(Mr-Jat.in).mp3",
+                "Mitti De Tibbe Kaka 320 Kbps.mp3",
+                "Jag Ghoomeya Sultan 320 Kbps.mp3",
+                "Bulleya Sultan 320 Kbps.mp3"
+            ]
+        },
+
+        {
+            "folder_name":"sad songs",
+            "song_name":[
+                "128-Akhiyaan Gulaab - Teri Baaton Mein Aisa Uljha Jiya 128 Kbps.mp3",
+                "Tu - Talwiinder 320 Kbps.mp3",
+                "Ijazat - Falak Shabir.mp3"
+            ]
+        }
+    
+    ]
+}
