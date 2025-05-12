@@ -39,10 +39,18 @@ async function updateUI(id) {
     idno = id;
 
     currentAudio = new Audio(`songs/${currfolder}/${songlst[idno]}`);
+    currentAudio.volume = document.getElementById("vlmrange").value; // 🔥 Fixed volume
     currentAudio.play();
 
-    currentAudio.addEventListener("ended", () => {
+    currentAudio.addEventListener("ended", async () => {
         document.getElementById("play").src = "tool/playbar.svg";
+        if (idno < songlst.length - 1) {
+            idno++;
+            await updateUI(idno);
+        } else {
+            currentAudio = null;
+            activeItem = null;
+        }
     });
 
     trackname = formatesongname(songlst[idno]);
@@ -74,7 +82,7 @@ async function updateUI(id) {
 }
 
 async function main() {
-    
+
     const res = await fetch("info.json");
     const json = await res.json();
     songData = json.songs;
@@ -86,20 +94,22 @@ async function main() {
         const card = document.createElement("div");
         card.className = "card";
         card.innerHTML = `
-            <div class="cardimg">
-                <img src="songs/${folder.folder_name}/img${index + 1}.jpg" id="cardimgid" alt="card img">
-                <div class="play">
-                    <img src="tool/play.svg" class="playsvg" alt="card image">
-                </div>
+        <div class="cardimg">
+            <img src="songs/${folder.folder_name}/img${index + 1}.jpg" id="cardimgid" alt="card img">
+            <div class="play">
+                <img src="tool/play.svg" class="playsvg" alt="card image">
             </div>
-            <span class="span1 spanbox">${folder.folder_name}</span>
-        `;
+        </div>
+        <span class="span1 spanbox">${folder.folder_name}</span>
+    `;
         foldercont.insertBefore(card, lastcont);
     });
 
+
+
     foldercont.addEventListener("click", async (e) => {
         let folderCard = e.target.closest(".card");
-        
+
         if (!folderCard) return;
 
         const folderName = folderCard.querySelector(".span1").innerText;
@@ -140,7 +150,6 @@ async function main() {
                 <img src="tool/playbar.svg" alt="play button image" class="playbtnimg">
             </li>`;
         });
-
         const playbtn = folderCard.querySelector(".play");
         if (playbtn) playbtn.id = "playafter";
 
@@ -150,8 +159,8 @@ async function main() {
             if (icon) icon.src = "tool/pausebar.svg";
         }
 
-       
-    
+
+
     });
 
     document.querySelector(".songslist").addEventListener("click", async (e) => {
@@ -216,20 +225,38 @@ async function main() {
         }
     });
 
-    
+
+
+
+
+
+
 }
 
 function clickleft() {
+
+    document.querySelector(".cardcont").addEventListener("click", (e) => {
+        const cardClicked = e.target.closest(".card");
+        document.querySelector(".left").classList.add("active");
+        console.log("Hello");
+    });
+
     let library = document.querySelector(".librarybtn");
     let left = document.querySelector(".left");
     let playlayout = document.querySelector(".playbar");
+
     library.addEventListener("click", (e) => {
         left.classList.add("active");
         e.stopPropagation();
     });
 
     document.addEventListener("click", (e) => {
-        if (!left.contains(e.target) && !library.contains(e.target) && !playlayout.contains(e.target)) {
+        if (
+            !left.contains(e.target) &&
+            !library.contains(e.target) &&
+            !playlayout.contains(e.target) &&
+            !e.target.closest(".card") // <-- this line added
+        ) {
             left.classList.remove("active");
         }
     });
@@ -261,6 +288,7 @@ function clickleft() {
         }
     });
 }
+
 
 main();
 clickleft();
